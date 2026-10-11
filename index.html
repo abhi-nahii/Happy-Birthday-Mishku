@@ -3,112 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Mishkuu ❤️</title>
+    <title>Happy Birthday Aarna </title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Cute Font -->
+    <!-- Clean Font -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icons -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
 <div id="loadingScreen">
-    <h1>🐹 Preparing something magical...</h1>
+    <h1>Preparing the surprise...</h1>
 </div>
-
-<!-- Floating Hearts -->
-<div class="hearts"></div>
 
 <!-- ========================= -->
 <!-- PASSWORD PAGE -->
 <!-- ========================= -->
 
 <section id="passwordPage">
+    <div class="passwordCard">
+        <h1>Hii Aarna</h1>
+        <h2>Happy Birthday </h2>
+        <p>
+            Before I let you in...
+            <br><br>
+            Can you prove you're the birthday girl
+            <br><br>
+            Enter the PIN below!!!
+        </p>
 
-<div class="passwordCard">
+        <!-- Password Display -->
+        <div id="passwordDisplay">Enter PIN</div>
 
-<h1>🐹 Hii Mishkuu!</h1>
+        <!-- KEYPAD -->
+        <div id="keypad">
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button class="key clear">CLR</button>
+            <button class="key">0</button>
+            <button class="key delete">⌫</button>
+        </div>
 
-<h2>Happy Birthday ❤️</h2>
-
-<p>
-Before I let you in...
-
-<br><br>
-
-Can you prove you're the birthday girl?
-
-<br><br>
-
-Enter the magical PIN below! 🎀
-</p>
-
-<div class="capybara">
-
-🐹
-
-<p id="capyMessage">
-
-I'm guarding the birthday surprise!
-
-</p>
-
-</div>
-
-<!-- Password Display -->
-
-<div id="passwordDisplay">
-
-Enter PIN
-
-</div>
-
-<!-- ========================= -->
-<!-- INSERT THE KEYPAD HERE -->
-<!-- ========================= -->
-
-<div id="keypad">
-
-<button class="key">1</button>
-<button class="key">2</button>
-<button class="key">3</button>
-
-<button class="key">4</button>
-<button class="key">5</button>
-<button class="key">6</button>
-
-<button class="key">7</button>
-<button class="key">8</button>
-<button class="key">9</button>
-
-<button class="key clear">CLR</button>
-<button class="key">0</button>
-<button class="key delete">⌫</button>
-
-</div>
-
-<p class="hint">
-
-🐹 Hint: It's a familiar date!!
-
-</p>
-
-<button id="unlockBtn">
-
-Unlock Surprise ✨
-
-</button>
-
-<p id="wrongPassword"></p>
-
-</div>
-
+        <p class="hint">Hint: It's a familiar date!!!</p>
+        <button id="unlockBtn">Unlock Surprise !!!</button>
+        <p id="wrongPassword"></p>
+    </div>
 </section>
 
 <!-- ========================= -->
@@ -116,45 +66,16 @@ Unlock Surprise ✨
 <!-- ========================= -->
 
 <section id="welcomePage">
-
-<div class="welcomeCard">
-
-<h1>
-
-Happy Birthday
-
-<span>
-
-Mishkuu ❤️
-
-</span>
-
-</h1>
-
-<p>
-
-I made this little surprise only for you.
-
-I hope it makes you smile even a tiny bit today.
-
-Click below...
-
-There are some gifts waiting for you 🎁
-
-</p>
-
-<button id="openHamper">
-
-Open My Birthday Hamper 🎀
-
-</button>
-
-<div id="hamperCountdown">
-
-</div>
-
-</div>
-
+    <div class="welcomeCard">
+        <h1>Happy Birthday <span>Aarna </span></h1>
+        <p>
+            i made this little surprise only for you
+            hope it makes u smile even a tiny bit today
+            click below... there are some gifts waiting for u 
+        </p>
+        <button id="openHamper">Open My Birthday Hamper !!!</button>
+        <div id="hamperCountdown"></div>
+    </div>
 </section>
 
 <!-- ========================= -->
@@ -162,614 +83,127 @@ Open My Birthday Hamper 🎀
 <!-- ========================= -->
 
 <section id="hamperPage">
+    <h1>Birthday Hamper</h1>
+    <p>Click every slot to reveal the wish!!!</p>
 
-<h1>
-
-🎁
-
-Birthday Hamper
-
-</h1>
-
-<p>
-
-Click every gift to reveal its surprise!
-
-</p>
-
-<div class="hamper">
-
-<div class="gift"
-
-id="giftChocolate">
-
-🍫
-
-<h3>
-
-KitKat
-
-</h3>
-
-</div>
-
-<div class="gift"
-
-id="giftDrama">
-
-📺
-
-<h3>
-
-K/C Drama
-
-</h3>
-
-</div>
-
-<div class="gift"
-
-id="giftHeight">
-
-📏
-
-<h3>
-
-Tiny Surprise
-
-</h3>
-
-</div>
-
-<div class="gift"
-
-id="giftCapy">
-
-🧸
-
-<h3>
-
-Capybara
-
-</h3>
-
-</div>
-
-<div class="gift locked"
-
-id="giftFinal">
-
-🎀
-
-<h3>
-
-Final Gift
-
-</h3>
-
-<p>
-
-Unlock after opening everything ❤️
-
-</p>
-
-</div>
-
-</div>
-
+    <div class="hamper">
+        <div class="gift" id="giftChocolate">
+            <h3>WISH #1</h3>
+        </div>
+        <div class="gift" id="giftDrama">
+            <h3>WISH #2</h3>
+        </div>
+        <div class="gift" id="giftHeight">
+            <h3>WISH #3</h3>
+        </div>
+        <div class="gift" id="giftCapy">
+            <h3>WISH #4</h3>
+        </div>
+        <div class="gift locked" id="giftFinal">
+            <h3>Final Card</h3>
+            <p>Unlock after opening everything !!!</p>
+        </div>
+    </div>
 </section>
 
 <!-- ========================= -->
 <!-- MUSIC BUTTON -->
 <!-- ========================= -->
 
-<button id="musicButton" title="Toggle Music">
-
-🔊
-
-</button>
+<button id="musicButton" title="Toggle Music">🔊</button>
 
 <audio id="birthdayMusic" loop>
-
-<source src="music/birthday.mp3" type="audio/mpeg">
-
+    <source src="music/birthday.mp3" type="audio/mpeg">
 </audio>
 
-<!-- ========================= -->
 <!-- CONFETTI -->
-<!-- ========================= -->
-
-<div id="confettiContainer">
-
-</div>
+<div id="confettiContainer"></div>
 
 <!-- ========================= -->
-<!-- MODALS START HERE -->
-<!-- Part 2 continues... -->
+<!-- MODALS / WISHES POPUPS -->
 <!-- ========================= -->
 
-<!-- ========================= -->
-<!-- CHOCOLATE GIFT -->
-<!-- ========================= -->
-
+<!-- WISH 1 -->
 <div class="modal" id="modalChocolate">
-
-<div class="popup chocolatePopup birthdayCard">
-
-<span class="close">&times;</span>
-
-
-<h1>
-
-🍫 KitKat ❤️
-
-</h1>
-
-
-<div class="chocolateBox">
-
-🍫
-
+    <div class="popup chocolatePopup birthdayCard">
+        <span class="close">&times;</span>
+        <h1>WISH #1</h1>
+        <p>
+            hbd to the smartest bookworm ik!!! u literally top every class read 500 pages a day and still manage to be the coolest tomboy ever. our vibe check is always matching 100 percent. no god or prayers needed cuz your own brain is already carrying the entire room anyway. hope your day is amazing buddy
+        </p>
+    </div>
 </div>
 
-
-<p>
-
-Happy Birthday, Mishkuu! ❤️
-
-<br><br>
-
-Just like a KitKat,
-
-I hope today gives you a little break from all the stress and fills your day with happiness.
-
-<br><br>
-
-Every bite reminds me that even the smallest moments shared with friends become wonderful memories.
-
-<br><br>
-
-Keep smiling,
-
-keep shining,
-
-and never stop being the amazing person you are.
-
-<br><br>
-
-Enjoy your KitKat! (which i never gib you 😜😜) 🍫✨
-
-</p>
-
-
-</div>
-
-</div>
-</div>
-
-<!-- ========================= -->
-<!-- DRAMA GIFT -->
-<!-- ========================= -->
-
+<!-- WISH 2 -->
 <div class="modal" id="modalDrama">
-
-<div class="popup dramaPopup birthdayCard">
-
-<span class="close">&times;</span>
-
-<h1>📺 Drama Corner 💖</h1>
-
-<p class="dramaIntro">
-A little surprise for a drama lover ✨
-</p>
-
-<div class="dramaCard">
-
-<h2>🌸 When I Fly Towards You</h2>
-
-<p>
-For the warm friendships, 
-that make ordinary days special.
-</p>
-
+    <div class="popup dramaPopup birthdayCard">
+        <span class="close">&times;</span>
+        <h1>WISH #2</h1>
+        <p>
+            hbd to the coolest main character!!! literal topper book reader legend and the down to earth bi icon we all need. i love how you can outsmart everyone and still be completely unbothered in a hoodie. close the textbooks for five minutes tonight so we can actually go celebrate properly
+        </p>
+    </div>
 </div>
 
-<div class="dramaCard">
-
-<h2>✨ Ang Mutya ng Section E</h2>
-
-<p>
-For the fun,
-chaos,
-laughter,
-and characters you can't forget.
-</p>
-
-</div>
-
-<div class="dramaCard shineCard">
-
-<h2>💝Love between Lines</h2>
-
-<p>
-
-Think of this as a little birthday surprise whenever you watch it. 💖
-
-</p>
-
-<a
-href="https://www.youtube.com/watch?v=vBlD2tgpBbY&list=PL6xVgUZ4UP2Pe16DwiuIYD9lQuXhPDoWU"
-target="_blank">
-
-▶ Watch on YouTube
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ========================= -->
-<!-- SHORT HEIGHT -->
-<!-- ========================= -->
-
+<!-- WISH 3 -->
 <div class="modal" id="modalHeight">
-
-<div class="popup heightPopup birthdayCard">
-
-<span class="close">&times;</span>
-
-
-<h1>
-
-📏 Tiny Surprise 💖
-
-</h1>
-
-
-<div class="ruler">
-
-📏
-
+    <div class="popup heightPopup birthdayCard">
+        <span class="close">&times;</span>
+        <h1>WISH #3</h1>
+        <p>
+            happy birthday genius!!! you are statistically the coolest person alive. hbd to my favorite book reading tomboy who doesn't need a higher power when she already has a perfect 100 score on every test. double the options in life and double the brains. have the best day ever buddy
+        </p>
+    </div>
 </div>
 
-
-<p>
-
-Okay...
-
-Let's talk about the most adorable thing first.
-
-<br><br>
-
-
-Yes, you are short.
-
-😂
-
-<br><br>
-
-
-But honestly...
-
-that's what makes you special.
-
-Small height, big personality.
-
-✨
-
-<br><br>
-
-
-Good things really do come in small packages,
-
-and you prove that perfectly.
-
-<br><br>
-
-
-No matter how much I tease you,
-
-stay the same amazing person you are.
-
-<br><br>
-
-
-Happy Birthday, Tiny Human! ❤️
-
-</p>
-
-
-</div>
-
-</div>
-
-<!-- ========================= -->
-<!-- CAPYBARA -->
-<!-- ========================= -->
-
+<!-- WISH 4 -->
 <div class="modal" id="modalCapy">
-
-<div class="popup capyPopup birthdayCard">
-
-<span class="close">&times;</span>
-
-
-<h1>
-
-🐹 Capybara Gift! 🤎
-
-</h1>
-
-
-<div class="capyGift">
-
-🐹
-
+    <div class="popup capyPopup birthdayCard">
+        <span class="close">&times;</span>
+        <h1>WISH #4</h1>
+        <p>
+            i wish that we always stay this close and keep matching vibes forever!!!! even when u r busy topping every single exam and reading a million books a day i hope we never stop having our chaotic adventures together. zero prayers needed cuz our friendship is already elite. let's go celebrate tonight buddy
+        </p>
+    </div>
 </div>
 
-
-<div class="capyLetter">
-
-
-<p>
-
-A tiny capybara for a special person ❤️
-
-
-<br><br>
-
-
-Capybaras are known for being calm,
-
-friendly, and making everyone smile.
-
-
-<br><br>
-
-
-Somehow...
-
-that reminded me of you.
-
-
-<br><br>
-
-
-I hope this little capybara themed website stays with you,
-
-travels with you,
-
-and reminds you of this little birthday surprise.
-
-
-<br><br>
-
-
-Keep smiling, Mishkuu 🐹🤎
-
-</p>
-
-
-</div>
-
-
-</div>
-
-</div>
-
-<!-- ========================= -->
 <!-- FINAL GIFT -->
-<!-- ========================= -->
-
-<!-- ========================= -->
-<!-- FINAL GIFT -->
-<!-- ========================= -->
-
 <div class="modal" id="modalFinal">
-
-<div class="popup finalPopup birthdayCard">
-
-<span class="close">&times;</span>
-
-
-<h1>
-
-🎂 Happy Birthday Mishkuu ❤️
-
-</h1>
-
-
-<div class="finalCake">
-
-🎂✨
-
-</div>
-
-
-<p>
-
-You opened every single gift! 🥳
-
-
-<br>
-
-
-Thank you for being such an amazing friend.
-
-I hope your year is filled with:
-
-<br>
-
-🌸 Happiness
-
-<br>
-
-🍫 Chocolates
-
-<br>
-
-📺 Amazing dramas
-
-<br>
-
-🐹 Cute capybaras
-
-<br>
-
-✨ Beautiful memories
-
-
-<br><br>
-
-
-But wait...
-
-there is one last surprise waiting for you ❤️
-
-
-</p>
-
-
-<button id="celebrateButton">
-
-Open Memories 🎉
-
-</button>
-
-
-</div>
-
+    <div class="popup finalPopup birthdayCard">
+        <span class="close">&times;</span>
+        <h1>Happy Birthday Aarna </h1>
+        <p>
+            i wish we get into the exact same college batch so i can copy off the smartest topper ik!!!! fr though i hope we never stop sharing good books having elite vibe checks and being the absolute chaotic duo we are. close the textbooks tonight cuz we are celebrating properly buddy
+        </p>
+        <button id="celebrateButton">Open Memories !!!</button>
+    </div>
 </div>
 
 <!-- ========================= -->
-<!-- FOOTER -->
-<!-- ========================= -->
-
-<!-- ========================= -->
-<!-- MEMORY PAGE -->f
+<!-- MEMORY PAGE -->
 <!-- ========================= -->
 
 <section id="memoryPage">
+    <h1>Little Memories </h1>
+    <p>A collection of our matching vibes !!!</p>
 
-
-<h1>
-
-📸 Little Memories ❤️
-
-</h1>
-
-
-<p>
-
-A tiny collection of beautiful moments ✨
-
-</p>
-
-
-<div class="carousel">
-
-
-<button class="carouselBtn left" id="prevBtn">
-
-❮
-
-</button>
-
-
-<div class="carouselWindow">
-
-<div class="carouselTrack">
-
-
-<img src="images/photo1.jpg">
-
-<img src="images/photo2.jpg">
-
-<img src="images/photo3.jpg">
-
-<img src="images/photo4.jpg">
-
-<img src="images/photo5.jpg">
-
-<img src="images/photo6.jpg">
-
-<img src="images/photo7.jpg">
-
-
-</div>
-
-</div>
-
-
-<button class="carouselBtn right" id="nextBtn">
-
-❯
-
-</button>
-
-
-</div>
-
-
-<div class="dots">
-
-<span class="dot active"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-
-</div>
-
-<div class="finalMessage">
-
-<p>
-
-Thank you for being such an amazing friend ❤️
-
-<br><br>
-
-I hope this little surprise made you smile.
-
-<br>
-
-Keep creating beautiful memories,
-
-keep chasing your dreams,
-
-and never stop being yourself.
-
-<br><br>
-
-Happy Birthday Mishkuu! 🎂✨
-
-</p>
-
-</div>
-
-
+    <div class="carousel">
+        <button class="carouselBtn left" id="prevBtn">❮</button>
+        <div class="carouselWindow">
+            <div class="carouselTrack">
+                <img src="images/photo1.jpg">
+                <img src="images/photo2.jpg">
+                <img src="images/photo3.jpg">
+                <img src="images/photo4.jpg">
+                <img src="images/photo5.jpg">
+                <img src="images/photo6.jpg">
+                <img src="images/photo7.jpg">
+            </div>
+        </div>
+        <button class="carouselBtn right" id="nextBtn">❯</button>
+    </div>
+    <div class="dots"></div>
 </section>
-
-<footer>
-
-Made with ❤️ especially for
-
-<b>Mishkuu</b>
-
-🐹
-
-</footer>
-
-<!-- Canvas for confetti -->
-
-<canvas id="canvas"></canvas>
-
-<script src="script.js"></script>
 
 </body>
 </html>
